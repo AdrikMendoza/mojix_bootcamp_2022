@@ -1,4 +1,3 @@
-from turtle import width
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -19,7 +18,7 @@ st.write(covid)
 country_options = covid['Country'].unique().tolist()
 date_options = covid['Date'].unique().tolist()
 date = st.selectbox('Which date would you like to explore?', date_options, 100)
-country = st.multiselect("Which country would you like to see?", country_options, ['Bolivia', 'Chile', 'Peru'])
+country = st.multiselect("Which country would you like to compare?", country_options, ['Bolivia', 'Chile', 'Peru'])
 
 covid = covid[covid['Country'].isin(country)]
 
@@ -34,5 +33,3 @@ fig2.layout.updatemenus[0].buttons[0].args[1]['transition']['duration'] = 1
 fig2.update_layout(width=800)
 
 st.write(fig2)
-
-
