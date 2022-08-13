@@ -2,6 +2,19 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+st.header('1. Walrus operator')
+st.write('The Walrus or := operator is one of the latest additions to python 3.8. It is an assignment operator that lets you assign value to a variable within an expression like conditional statements, loops, etc.')
+
+st.subheader('Example')
+walrus_operator = '''Mylist = [1,2,3]
+if(list := len(Mylist > 2):
+    print(list)'''
+st.code(walrus_operator, language='python')
+
+st.subheader('Output')
+outputWO = '''3'''
+st.code(outputWO, language='python')
+
 st.title('Comparison Between Countries on Covid-19 Evolution')
 st.write('This is a web app that allows you to compare covid-19 evolution between countries.')
 st.write('Enjoy!')
