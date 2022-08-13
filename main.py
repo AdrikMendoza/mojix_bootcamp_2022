@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 st.header('Walrus operator')
-st.write('The Walrus or := operator is one of the latest additions to python 3.8. It is an assignment operator that lets you assign value to a variable within an expression like conditional statements, loops, etc.')
+st.text('The Walrus or := operator is one of the latest additions to python 3.8. It is an assignment operator that lets you assign value to a variable within an expression like conditional statements, loops, etc.')
 
 st.subheader('Example')
 walrus_operator = '''Mylist = [1,2,3]
@@ -16,7 +16,7 @@ outputWO = '''3'''
 st.code(outputWO, language='python')
 
 st.header('Splitting a string')
-st.write('If you want to split the components of a string into a list you can do that easily using the split() function in python. This will make the string operations a lot easier!')
+st.text('If you want to split the components of a string into a list you can do that easily using the split() function in python. This will make the string operations a lot easier!')
 
 st.subheader('Example')
 string_split = '''string = "hello world"
