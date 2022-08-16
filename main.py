@@ -1,12 +1,18 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import matplotlib.pyplot as plt
 
 st.title("CSV READER")
 file = st.file_uploader("Upload a CSV", type="csv")
 if file:
     df = pd.read_csv(file)
     st.dataframe(df)
+    st.markdown("---")
+    fig1 = plt.figure(figsize-(10,4))
+    sns.countplot(x='Pclass', data=df)
+    
+    st.pyplot(fig1)
 
 st.header('Walrus operator')
 st.text('The Walrus or := operator is one of the latest additions to python 3.8. It is an assignment operator that lets you assign value to a variable within an expression like conditional statements, loops, etc.')
