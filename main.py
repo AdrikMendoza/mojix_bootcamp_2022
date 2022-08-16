@@ -11,9 +11,12 @@ if file:
     st.markdown("---")
     fig1 = plt.figure(figsize-(10,4))
     sns.countplot(x='Pclass', data=df)
-    
     st.pyplot(fig1)
-
+    
+    fig2 = plt.figure(figsize-(10,4))
+    sns.boxplot('Pclass', y='Age', data=df)
+    st.pyplot(fig2)
+    
 
 st.title('Comparison Between Countries on Covid-19 Evolution')
 st.write('This is a web app that allows you to compare covid-19 evolution between countries.')
