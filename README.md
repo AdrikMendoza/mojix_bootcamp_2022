@@ -5,4 +5,4 @@
 **Experimenting with streamlit:**
 
 1. **File: main.py**
-* Link: https://adrikmendoza-mojix-bootcamp-2022-main-zwiuff.streamlitapp.com/
+    * Link: https://adrikmendoza-mojix-bootcamp-2022-main-zwiuff.streamlitapp.com/
