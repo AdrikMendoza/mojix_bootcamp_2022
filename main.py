@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 # import matplotlib.pyplot as plt
-import seaborn as sns
+# import seaborn as sns
 
 # st.title("CSV READER")
 # file = st.file_uploader("Upload a CSV", type="csv")
