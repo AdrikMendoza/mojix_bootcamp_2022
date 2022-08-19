@@ -1,22 +1,22 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.title("CSV READER")
-file = st.file_uploader("Upload a CSV", type="csv")
-if file:
-    df = pd.read_csv(file)
-    st.dataframe(df)
-    st.markdown("---")
-    fig1 = plt.figure(figsize-(10,4))
-    sns.countplot(x='Pclass', data=df)
-    st.pyplot(fig1)
+# st.title("CSV READER")
+# file = st.file_uploader("Upload a CSV", type="csv")
+# if file:
+#     df = pd.read_csv(file)
+#     st.dataframe(df)
+#     st.markdown("---")
+#     fig1 = plt.figure(figsize-(10,4))
+#     sns.countplot(x='Pclass', data=df)
+#     st.pyplot(fig1)
     
-    fig2 = plt.figure(figsize-(10,4))
-    sns.boxplot('Pclass', y='Age', data=df)
-    st.pyplot(fig2)
+#     fig2 = plt.figure(figsize-(10,4))
+#     sns.boxplot('Pclass', y='Age', data=df)
+#     st.pyplot(fig2)
     
 
 st.title('Comparison Between Countries on Covid-19 Evolution')
