@@ -5,6 +5,9 @@
 **Experimenting with streamlit:**
 
 1. File: **main.py**
-    * Link: https://adrikmendoza-mojix-bootcamp-2022-main-j5etzl.streamlitapp.com/
+      * App Link: https://adrikmendoza-mojix-bootcamp-2022-main-j5etzl.streamlitapp.com/
     
 2. File: 
+      * App Link: https://adrikmendoza-mojix-bootcamp-2022-main-j5etzl.streamlitapp.com/
+      
+      * Dashboard Link: https://public.tableau.com/app/profile/aldair.mendoza/viz/InventoryUnders/Dashboard1?publish=yes
