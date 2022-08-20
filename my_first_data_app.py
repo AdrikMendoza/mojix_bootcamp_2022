@@ -46,11 +46,13 @@ st.markdown("---")
 ### BAR CHARTS
 unders_by_category = (df_selection.groupby(by=['Retail_Product_Level1Name']).sum()[['unders']].sort_values('unders'))
 
-fig_product_sales = px.bar(unders_by_category, x=unders_by_category.index, y='unders', 
+fig_category = px.bar(unders_by_category, x=unders_by_category.index, y='unders', 
                             title='Total unders per category', template = 'plotly_white',
                             color_discrete_sequence=["#0083b8"] * len(unders_by_category))
 
-
+fig_category.update_layout(
+    plot_bgcolor="rgba(0,0,0,0)",
+    xaxis=(dict(showgrid=False))
 
 
 
@@ -60,11 +62,13 @@ fig_product_name = px.bar(unders_by_product_name, x='unders', y=unders_by_produc
                             orientation='h', title='Top 30 Products', template = 'plotly_white',
                             color_discrete_sequence=["#0083b8"] * len(unders_by_category))
 
-
+fig_product_name.update_layout(
+    plot_bgcolor="rgba(0,0,0,0)",
+    xaxis=(dict(showgrid=False))
 
 
 left_column, right_column = st.columns(2)
-left_column.plotly_chart(fig_product_sales, use_container_width=True)
+left_column.plotly_chart(fig_category, use_container_width=True)
 right_column.plotly_chart(fig_product_name, use_container_width=True)
 
 
