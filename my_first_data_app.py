@@ -77,3 +77,6 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
+st.write("Dashboard in the following link! ;) [link](https://public.tableau.com/app/profile/aldair.mendoza/viz/InventoryUnders/Dashboard1?publish=yes)")
