@@ -26,6 +26,7 @@ st.dataframe(df_selection)
 
 st.title(":bar_chart: Inventory Discrepancy")
 st.markdown("##")
+st.write("Tableau Dashboard in the following link! ;) [link](https://public.tableau.com/app/profile/aldair.mendoza/viz/InventoryUnders/Dashboard1?publish=yes)")
 
 ### TOP
 
@@ -79,4 +80,3 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
-st.write("Dashboard in the following link! ;) [link](https://public.tableau.com/app/profile/aldair.mendoza/viz/InventoryUnders/Dashboard1?publish=yes)")
